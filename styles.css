@@ -7,6 +7,11 @@
   --gold: #8a7b19;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -234,6 +239,40 @@ h2 {
   border-radius: 8px;
 }
 
+.book {
+  background-color: var(--black);
+}
+
+.my-book-content {
+  background-color: var(--black);
+  width: 80%;
+}
+
+.my-book-image {
+  width: 30%;
+  height: 27rem;
+}
+
+.my-book-info {
+  width: 60%;
+  color: var(--olive-gray);
+}
+
+.link-buy-book {
+  align-self: center;
+}
+
+.buy-book {
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  background-color: var(--olive-gray);
+  color: var(--black);
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+}
+
 footer {
   background-color: var(--green);
   color: white;
@@ -343,6 +382,27 @@ footer {
   .area {
     text-align: center;
   }
+
+  .my-book-content {
+    background-color: var(--black);
+    width: 90%;
+  }
+
+  .my-book-image {
+    width: 50%;
+    height: 15rem;
+  }
+
+  .my-book-info {
+    width: 90%;
+    gap: 1rem;
+  }
+
+  .buy-book {
+    width: 10rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) /* TABLET SCREEN ----------------------------------------------------------------------------------------------- */ {
@@ -432,6 +492,27 @@ footer {
 
   .me {
     align-self: center;
+  }
+
+  .my-book-content {
+    background-color: var(--black);
+    width: 90%;
+  }
+
+  .my-book-image {
+    width: 30%;
+    height: 20rem;
+  }
+
+  .my-book-info {
+    width: 90%;
+    gap: 1rem;
+  }
+
+  .buy-book {
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 1rem;
   }
 }
 

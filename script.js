@@ -8,7 +8,6 @@ menuButton.addEventListener("click", () => {
   const headerHeight = dropdown.classList.contains("show")
     ? dropdown.offsetHeight
     : 0
-  header.style.height = headerHeight + "px"
 
   arrowButton.classList.add("rotated")
 })

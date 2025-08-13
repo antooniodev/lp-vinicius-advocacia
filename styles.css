@@ -240,7 +240,6 @@ h2 {
   border-radius: 8px;
 }
 
-/* Animation classes */
 .animate {
   opacity: 0;
   transform: translateY(40px);
@@ -252,7 +251,6 @@ h2 {
   transform: translateY(0);
 }
 
-/* For left/right slide */
 .animate-left {
   opacity: 0;
   transform: translateX(-40px);

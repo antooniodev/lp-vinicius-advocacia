@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let contactsLink = document.getElementById("contacts-link")
 
   aboutUsLink.addEventListener("click", function () {
-    console.log("teste")
-
     document.getElementById("about-us").scrollIntoView({ behavior: "smooth" })
   })
 
@@ -42,5 +40,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   contactsLink.addEventListener("click", function () {
     document.getElementById("contacts").scrollIntoView({ behavior: "smooth" })
+  })
+
+  const animatedElements = document.querySelectorAll(
+    ".animate, .animate-left, .animate-right"
+  )
+  const observer = new window.IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible")
+          observer.unobserve(entry.target)
+        }
+      })
+    },
+    {
+      threshold: 0.15,
+    }
+  )
+  animatedElements.forEach((el) => {
+    observer.observe(el)
   })
 })

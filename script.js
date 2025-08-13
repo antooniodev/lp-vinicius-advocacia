@@ -12,3 +12,35 @@ menuButton.addEventListener("click", () => {
 
   arrowButton.classList.add("rotated")
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+  let aboutUsLink = document.getElementById("about-us-link")
+  let aboutMeLink = document.getElementById("about-me-link")
+  let areasLink = document.getElementById("areas-link")
+  let bookLink = document.getElementById("book-link")
+  let contactsLink = document.getElementById("contacts-link")
+
+  aboutUsLink.addEventListener("click", function () {
+    console.log("teste")
+
+    document.getElementById("about-us").scrollIntoView({ behavior: "smooth" })
+  })
+
+  aboutMeLink.addEventListener("click", function () {
+    document.getElementById("about-me").scrollIntoView({ behavior: "smooth" })
+  })
+
+  areasLink.addEventListener("click", function () {
+    document
+      .getElementById("section-areas")
+      .scrollIntoView({ behavior: "smooth" })
+  })
+
+  bookLink.addEventListener("click", function () {
+    document.getElementById("book").scrollIntoView({ behavior: "smooth" })
+  })
+
+  contactsLink.addEventListener("click", function () {
+    document.getElementById("contacts").scrollIntoView({ behavior: "smooth" })
+  })
+})

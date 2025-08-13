@@ -213,7 +213,7 @@ h2 {
 }
 
 /*areas */
-.section-areas {
+#section-areas {
   background-color: var(--beige);
   padding: 2rem 0;
   flex-direction: column;
@@ -239,7 +239,7 @@ h2 {
   border-radius: 8px;
 }
 
-.book {
+#book {
   background-color: var(--black);
 }
 
@@ -273,7 +273,7 @@ h2 {
   border: none;
 }
 
-.contacts {
+#contacts {
   background-color: var(--blue-gray);
   color: var(--green);
   display: flex;

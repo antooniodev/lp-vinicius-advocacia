@@ -28,7 +28,6 @@ body {
 main {
   flex: 1;
   display: flex;
-
   flex-direction: column;
 }
 
@@ -44,7 +43,6 @@ header {
   width: 80%;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   padding: 0.5rem;
 }
 
@@ -97,10 +95,12 @@ header {
   justify-content: center;
   cursor: pointer;
 }
+
 li > a {
   text-decoration: none;
   color: var(--blue-gray);
 }
+
 li > a:active {
   color: var(--blue-gray);
 }
@@ -116,6 +116,7 @@ li > a:active {
   display: flex;
   align-items: center;
 }
+
 .container-header-contacts-links > a {
   display: flex;
   align-items: center;
@@ -124,15 +125,6 @@ li > a:active {
 .container-header-contacts-links img {
   margin: 0 5px;
   width: 2rem;
-}
-
-.container-header-contacts-button {
-  padding: 10px 15px;
-  border: 1px solid var(--beige);
-  border-radius: 4px;
-  background-color: var(--green);
-  cursor: pointer;
-  color: var(--beige);
 }
 
 .menu-arrow {
@@ -167,6 +159,15 @@ li > a:active {
   color: var(--beige);
   border-radius: 8px;
   border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-contact-us:hover {
+  background-color: var(--gold);
+  color: var(--black);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* About us */
@@ -182,8 +183,8 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  gap: 2rem;
+  padding: 3rem;
+  gap: 3rem;
 }
 
 .about-text {
@@ -191,12 +192,23 @@ section {
   color: var(--beige);
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.8rem;
   text-align: justify;
+  line-height: 1.7;
+  font-size: 1.1rem;
 }
+
+.highlight-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--olive-gray);
+  margin-bottom: 1rem;
+  text-align: start;
+}
+
 .about-image {
-  width: 35%;
-  height: 15rem;
+  width: 40%;
+  height: 20rem;
   border-radius: 1rem;
 }
 
@@ -207,9 +219,38 @@ section {
   align-items: end;
 }
 
+.name-highlight {
+  font-size: 1.8rem;
+  color: var(--olive-gray);
+  margin-bottom: 0.8rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: end;
+}
+
+.contact-item-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.contact-item > img {
+  width: 1.7rem;
+}
+.contact-item-inline img {
+  width: 1rem;
+}
+
 .person {
   width: 30%;
 }
+
 h2 {
   font-size: 2rem;
 }
@@ -247,6 +288,7 @@ h2 {
   transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
     transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .animate.visible {
   opacity: 1;
   transform: translateY(0);
@@ -258,16 +300,19 @@ h2 {
   transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
     transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .animate-left.visible {
   opacity: 1;
   transform: translateX(0);
 }
+
 .animate-right {
   opacity: 0;
   transform: translateX(40px);
   transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
     transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .animate-right.visible {
   opacity: 1;
   transform: translateX(0);
@@ -294,6 +339,7 @@ h2 {
 
 .link-buy-book {
   align-self: center;
+  margin-top: 2rem;
 }
 
 .buy-book {
@@ -305,6 +351,19 @@ h2 {
   font-weight: bold;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-book:hover {
+  background-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-title {
+  letter-spacing: 2px;
+  font-size: 2.2rem;
 }
 
 #contacts {
@@ -314,6 +373,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding: 1rem 0px;
+  font-size: 0.8rem;
 }
 
 .contacts-content {
@@ -324,7 +384,7 @@ h2 {
 .contact-item {
   display: flex;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   color: var(--green);
   gap: 4px;
 }
@@ -336,6 +396,54 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+.contact-title h3 {
+  font-size: 1rem;
+}
+
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.whatsapp-button button {
+  background-color: var(--green);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-button button:hover {
+  background-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+.social-links img {
+  width: 2rem;
+  height: 2rem;
+}
+
 footer {
   background-color: var(--green);
   color: white;
@@ -343,7 +451,7 @@ footer {
   padding: 10px;
 }
 
-@media only screen and (max-width: 767px) and (min-width: 320px) /* MOBILE SCREEN ---------------------------------------------------------------------------------------*/ {
+@media only screen and (max-width: 767px) and (min-width: 320px) {
   /* HEADER */
   header {
     position: relative;
@@ -372,10 +480,6 @@ footer {
   .container-header-list li {
     font-size: 16px;
     padding: 0.5rem 0;
-  }
-
-  .container-header-contacts-button {
-    margin-right: 1rem;
   }
 
   .container-header-dropdown.show {
@@ -423,6 +527,7 @@ footer {
 
   .about-image {
     width: 80%;
+    height: 15rem;
   }
 
   .about-me-content {
@@ -473,31 +578,35 @@ footer {
     width: 80%;
   }
 
-  .contact-title > h2 {
-    font-size: 1.3rem;
+  .contact-title > h3 {
+    font-size: 0.9rem;
   }
 
   .contact-item {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .contact-item > img {
     width: 1.3rem;
   }
 
+  .book-title {
+    text-align: center;
+  }
+
   iframe {
     width: 100%;
-    height: 300px;
+    height: 200px;
   }
 }
 
-@media only screen and (max-width: 1023px) and (min-width: 768px) /* TABLET SCREEN ----------------------------------------------------------------------------------------------- */ {
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
   /* HEADER */
-
   .container-header-logo {
     width: 7rem;
     height: 3rem;
   }
+
   .container-header {
     display: flex;
     align-items: center;
@@ -538,11 +647,6 @@ footer {
     width: 100%;
   }
 
-  .container-header-contacts-button {
-    padding: 8px 12px;
-    height: auto;
-  }
-
   /* HERO */
   .hero {
     width: 100%;
@@ -569,6 +673,7 @@ footer {
 
   .about-image {
     width: 50%;
+    height: 17rem;
   }
 
   .about-me-content {
@@ -601,17 +706,21 @@ footer {
     font-size: 1rem;
   }
 
+  .book-title {
+    text-align: center;
+  }
+
   .contacts-content {
     flex-direction: row;
     width: 80%;
   }
 
-  .contact-title > h2 {
-    font-size: 1.5rem;
+  .contact-title > h3 {
+    font-size: 1rem;
   }
 }
 
-@media only screen and (min-width: 1024px) /* DESKTOP SCREEN ------------------------------------------------------------------------------------------- */ {
+@media only screen and (min-width: 1024px) {
   .desktop-background {
     display: block;
   }
@@ -665,10 +774,6 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
-  }
-
-  .container-header-contacts-button {
-    padding: 12px 17px;
   }
 
   .divider {

@@ -9,7 +9,7 @@ menuButton.addEventListener("click", () => {
     ? dropdown.offsetHeight
     : 0
 
-  arrowButton.classList.add("rotated")
+  arrowButton.classList.toggle("rotated")
 })
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -18,7 +18,6 @@ a {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -29,6 +28,8 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 header {
@@ -176,6 +177,14 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+#about-us {
+  background-color: white;
+}
+
+.about-us-text > p {
+  color: var(--green);
 }
 
 .section-content {
@@ -530,6 +539,10 @@ footer {
     height: 15rem;
   }
 
+  .highlight-text {
+    text-align: center;
+  }
+
   .about-me-content {
     flex-direction: column;
     align-items: center;
@@ -676,6 +689,9 @@ footer {
     height: 17rem;
   }
 
+  .highlight-text {
+    text-align: center;
+  }
   .about-me-content {
     flex-direction: column;
     align-items: center;

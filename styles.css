@@ -41,6 +41,7 @@ header {
 
 .container-header {
   width: 80%;
+  max-width: 1920px;
   display: flex;
   align-items: center;
   padding: 0.5rem;
@@ -193,6 +194,7 @@ section {
 
 .section-content {
   width: 80%;
+  max-width: 1920px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -263,7 +265,8 @@ section {
 }
 
 .person {
-  width: 30%;
+  width: 35%;
+  height: 25rem;
 }
 
 h2 {
@@ -472,6 +475,11 @@ footer {
   font-family: "Lato", sans-serif;
 }
 
+@media (max-width: 767px) and (min-width: 450px) {
+  .person {
+    width: 50% !important;
+  }
+}
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   /* HEADER */
   header {
@@ -536,6 +544,11 @@ footer {
 
   .about-text {
     width: 80%;
+  }
+
+  .person {
+    width: 60%;
+    height: 18rem !important;
   }
 
   .section-content {
@@ -699,6 +712,11 @@ footer {
   .about-image {
     width: 50%;
     height: 17rem;
+  }
+
+  .person {
+    width: 35%;
+    height: 20rem;
   }
 
   .highlight-text {

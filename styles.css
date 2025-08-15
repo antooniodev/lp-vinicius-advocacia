@@ -266,7 +266,7 @@ section {
 }
 
 .lawyer-photo {
-  width: 35%;
+  width: 20rem;
   height: 25rem;
 }
 
@@ -461,7 +461,7 @@ footer {
 
 @media (max-width: 767px) and (min-width: 450px) {
   .lawyer-photo {
-    width: 20rem !important;
+    width: 10rem !important;
   }
 }
 @media only screen and (max-width: 767px) and (min-width: 320px) {
@@ -531,7 +531,7 @@ footer {
   }
 
   .lawyer-photo {
-    width: 10rem;
+    width: 15rem !important;
     height: 20rem !important;
   }
 
@@ -699,7 +699,7 @@ footer {
   }
 
   .lawyer-photo {
-    width: 20rem;
+    width: 17rem;
     height: 20rem;
   }
 
@@ -812,6 +812,6 @@ footer {
   }
 
   .lawyer-photo {
-    width: 25rem;
+    width: 20rem;
   }
 }

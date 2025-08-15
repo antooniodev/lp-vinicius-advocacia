@@ -31,6 +31,7 @@ main {
   overflow-y: hidden;
 }
 
+/* HEADER */
 header {
   display: flex;
   justify-content: center;
@@ -39,7 +40,7 @@ header {
   border-bottom: 5px solid var(--gold);
 }
 
-.container-header {
+.header__container {
   width: 80%;
   max-width: 1920px;
   display: flex;
@@ -47,18 +48,18 @@ header {
   padding: 0.5rem;
 }
 
-.container-header-logo {
+.header__logo {
   width: 8rem;
 }
 
-.container-header-menu-button {
+.header__menu-toggle {
   align-self: center;
   padding: 10px;
   border: none;
   cursor: pointer;
 }
 
-.container-header-dropdown {
+.header__dropdown {
   display: none;
   top: 100%;
   background-color: var(--green);
@@ -66,7 +67,7 @@ header {
     transform 0.5s ease-out;
 }
 
-.container-header-dropdown.show {
+.header__dropdown.show {
   z-index: 1;
   display: block;
   opacity: 1;
@@ -85,12 +86,12 @@ header {
   }
 }
 
-.container-header-list {
+.navigation__list {
   list-style: none;
   align-items: center;
 }
 
-.container-header-list li {
+.navigation__list li {
   color: var(--blue-gray);
   display: flex;
   justify-content: center;
@@ -107,33 +108,33 @@ li > a:active {
   color: var(--blue-gray);
 }
 
-.container-header-contacts {
+.header__contacts {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
 }
 
-.container-header-contacts-links {
+.header__social-links {
   display: flex;
   align-items: center;
 }
 
-.container-header-contacts-links > a {
+.header__social-links > a {
   display: flex;
   align-items: center;
 }
 
-.normal-text {
+.section__description {
   font-family: "Poppins", sans-serif;
 }
 
-.container-header-contacts-links img {
+.header__social-links img {
   margin: 0 5px;
   width: 2rem;
 }
 
-.menu-arrow {
+.header__menu-arrow {
   transition: transform 0.3s ease;
 }
 
@@ -152,12 +153,12 @@ li > a:active {
   flex-direction: column;
 }
 
-.logo-hero {
+.hero__logo {
   width: 30em;
   height: 7rem;
 }
 
-.button-contact-us {
+.hero__cta-button {
   width: 15rem;
   height: 3rem;
   font-size: 1.2rem;
@@ -169,14 +170,14 @@ li > a:active {
   transition: all 0.3s ease;
 }
 
-.button-contact-us:hover {
+.hero__cta-button:hover {
   background-color: var(--gold);
   color: var(--black);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* About us */
+/* SECTIONS */
 section {
   background-color: var(--green);
   width: 100%;
@@ -188,11 +189,11 @@ section {
   background-color: white;
 }
 
-.about-us-text > p {
+.about-office > p {
   color: var(--green);
 }
 
-.section-content {
+.section__container {
   width: 80%;
   max-width: 1920px;
   display: flex;
@@ -202,7 +203,7 @@ section {
   gap: 3rem;
 }
 
-.about-text {
+.section__text {
   width: 65%;
   color: var(--beige);
   display: flex;
@@ -213,7 +214,7 @@ section {
   font-size: 1.1rem;
 }
 
-.highlight-text {
+.section__highlight-text {
   font-size: 1.5rem;
   font-family: "Lato", sans-serif;
   font-weight: bold;
@@ -222,27 +223,27 @@ section {
   text-align: start;
 }
 
-.about-image {
+.section__image {
   width: 40%;
   height: 20rem;
   border-radius: 1rem;
 }
 
-.me {
+.lawyer-info {
   align-self: self-start;
   display: flex;
   flex-direction: column;
   align-items: end;
 }
 
-.name-highlight {
+.lawyer__name {
   font-size: 1.8rem;
   color: var(--olive-gray);
   margin-bottom: 0.8rem;
   font-family: "Lato", sans-serif;
 }
 
-.contact-info {
+.lawyer__contact-info {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -250,21 +251,21 @@ section {
   text-align: end;
 }
 
-.contact-item-inline {
+.contact__item-inline {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
 }
 
-.contact-item > img {
+.contact__item > img {
   width: 1.7rem;
 }
-.contact-item-inline img {
+.contact__item-inline img {
   width: 1rem;
 }
 
-.person {
+.lawyer-photo {
   width: 35%;
   height: 25rem;
 }
@@ -273,7 +274,7 @@ h2 {
   font-size: 2rem;
 }
 
-/*areas */
+/* AREAS */
 #section-areas {
   background-color: var(--beige);
   padding: 2rem 0;
@@ -282,18 +283,18 @@ h2 {
   gap: 1rem;
 }
 
-.line {
+.areas__row {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-.areas-title {
+.areas__title {
   color: var(--green);
   font-family: "Lato", sans-serif;
 }
 
-.area {
+.areas__item {
   background-color: var(--green);
   color: var(--beige);
   padding: 1rem;
@@ -302,6 +303,7 @@ h2 {
   font-family: "Poppins", sans-serif;
 }
 
+/* ANIMATIONS */
 .animate {
   opacity: 0;
   transform: translateY(40px);
@@ -338,31 +340,32 @@ h2 {
   transform: translateX(0);
 }
 
+/* BOOK SECTION */
 #book {
   background-color: var(--black);
 }
 
-.my-book-content {
+.book-showcase {
   background-color: var(--black);
   width: 80%;
 }
 
-.my-book-image {
+.book__image {
   width: 30%;
   height: 27rem;
 }
 
-.my-book-info {
+.book-info {
   width: 60%;
   color: var(--olive-gray);
 }
 
-.link-buy-book {
+.book__purchase-link {
   align-self: center;
   margin-top: 2rem;
 }
 
-.buy-book {
+.book__purchase-button {
   width: 15rem;
   height: 3rem;
   font-size: 1.2rem;
@@ -375,18 +378,19 @@ h2 {
   transition: all 0.3s ease;
 }
 
-.buy-book:hover {
+.book__purchase-button:hover {
   background-color: var(--gold);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.book-title {
+.book__title {
   letter-spacing: 2px;
   font-size: 2.2rem;
   font-family: "Lato", sans-serif;
 }
 
+/* CONTACT SECTION */
 #contacts {
   background-color: var(--blue-gray);
   color: var(--green);
@@ -397,13 +401,13 @@ h2 {
   font-size: 0.8rem;
 }
 
-.contacts-content {
+.contact-section {
   width: 80%;
   color: var(--green);
   padding: 0px;
 }
 
-.contact-item {
+.contact__item {
   display: flex;
   align-items: center;
   font-size: 0.9rem;
@@ -411,7 +415,7 @@ h2 {
   gap: 4px;
 }
 
-.contact-title {
+.contact__title {
   color: var(--green);
   border-bottom: 4px solid var(--gold);
   width: fit-content;
@@ -419,18 +423,18 @@ h2 {
   font-family: "Lato", sans-serif;
 }
 
-.contact-title h3 {
+.contact__title h3 {
   font-size: 1rem;
 }
 
-.contact-actions {
+.contact__actions {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin: 1.5rem 0;
 }
 
-.whatsapp-button button {
+.contact__whatsapp-link button {
   background-color: var(--green);
   color: white;
   border: none;
@@ -441,30 +445,10 @@ h2 {
   transition: all 0.3s ease;
 }
 
-.whatsapp-button button:hover {
+.contact__whatsapp-link button:hover {
   background-color: var(--gold);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
-}
-
-.social-links a {
-  display: flex;
-  align-items: center;
-  transition: transform 0.3s ease;
-}
-
-.social-links a:hover {
-  transform: scale(1.1);
-}
-
-.social-links img {
-  width: 2rem;
-  height: 2rem;
 }
 
 footer {
@@ -476,8 +460,8 @@ footer {
 }
 
 @media (max-width: 767px) and (min-width: 450px) {
-  .person {
-    width: 50% !important;
+  .lawyer-photo {
+    width: 20rem !important;
   }
 }
 @media only screen and (max-width: 767px) and (min-width: 320px) {
@@ -488,12 +472,12 @@ footer {
     transition: height 0.5s ease-in-out;
   }
 
-  .container-header {
+  .header__container {
     width: 90%;
     justify-content: space-between;
   }
 
-  .container-header-dropdown {
+  .header__dropdown {
     position: absolute;
     top: 99%;
     left: 0;
@@ -502,24 +486,24 @@ footer {
     overflow: hidden;
   }
 
-  .container-header-list {
+  .navigation__list {
     padding: 0.5rem 0;
   }
 
-  .container-header-list li {
+  .navigation__list li {
     font-size: 16px;
     padding: 0.5rem 0;
   }
 
-  .container-header-dropdown.show {
+  .header__dropdown.show {
     max-height: 300px;
   }
 
-  .container-header-contacts {
+  .header__contacts {
     border-top: 1px solid #ddd;
   }
 
-  .container-header-dropdown:not(.show) {
+  .header__dropdown:not(.show) {
     max-height: 0;
     opacity: 0;
     transform: translateY(-10px);
@@ -531,27 +515,27 @@ footer {
     min-height: 15rem;
   }
 
-  .logo-hero {
+  .hero__logo {
     width: 18em;
     height: 5rem;
   }
 
-  .button-contact-us {
+  .hero__cta-button {
     width: 10rem;
     height: 2rem;
     font-size: 0.8rem;
   }
 
-  .about-text {
+  .section__text {
     width: 80%;
   }
 
-  .person {
-    width: 60%;
-    height: 18rem !important;
+  .lawyer-photo {
+    width: 10rem;
+    height: 20rem !important;
   }
 
-  .section-content {
+  .section__container {
     flex-direction: column-reverse;
     width: 100%;
     align-items: center;
@@ -559,76 +543,76 @@ footer {
     gap: 1rem;
   }
 
-  .about-image {
+  .section__image {
     width: 80%;
     height: 15rem;
   }
 
-  .highlight-text {
+  .section__highlight-text {
     text-align: center;
   }
 
-  .about-me-content {
+  .about-lawyer {
     flex-direction: column;
     align-items: center;
   }
 
-  .me {
+  .lawyer-info {
     align-self: center;
   }
 
-  .container-areas {
+  .areas__container {
     width: 90%;
   }
 
-  .line {
+  .areas__row {
     flex-direction: column;
   }
 
-  .area {
+  .areas__item {
     text-align: center;
   }
 
-  .my-book-content {
+  .book-showcase {
     background-color: var(--black);
     width: 90%;
   }
 
-  .my-book-image {
+  .book__image {
     width: 50%;
     height: 15rem;
   }
 
-  .my-book-info {
+  .book-info {
     width: 90%;
     gap: 1rem;
   }
 
-  .buy-book {
+  .book__purchase-button {
     width: 10rem;
     height: 2rem;
     font-size: 0.8rem;
   }
 
-  .contacts-content {
+  .contact-section {
     flex-direction: column;
     padding: 0px !important;
     width: 80%;
   }
 
-  .contact-title > h3 {
+  .contact__title > h3 {
     font-size: 0.9rem;
   }
 
-  .contact-item {
+  .contact__item {
     font-size: 0.8rem;
   }
 
-  .contact-item > img {
+  .contact__item > img {
     width: 1.3rem;
   }
 
-  .book-title {
+  .book__title {
     text-align: center;
   }
 
@@ -640,12 +624,12 @@ footer {
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   /* HEADER */
-  .container-header-logo {
+  .header__logo {
     width: 7rem;
     height: 3rem;
   }
 
-  .container-header {
+  .header__container {
     display: flex;
     align-items: center;
     width: 90%;
@@ -653,7 +637,7 @@ footer {
     margin: 0 auto;
   }
 
-  .container-header-list {
+  .navigation__list {
     text-align: center;
     margin: 0;
     display: flex;
@@ -663,23 +647,23 @@ footer {
     padding: 0;
   }
 
-  .container-header-list li:hover {
+  .navigation__list li:hover {
     border-bottom: solid 3px var(--blue);
   }
 
-  .container-header-contacts-links img:hover {
+  .header__social-links img:hover {
     border-bottom: solid 3px var(--blue);
   }
 
-  .container-header-contacts {
+  .header__contacts {
     justify-content: flex-end;
   }
 
-  .container-header-menu-button {
+  .header__menu-toggle {
     display: none;
   }
 
-  .container-header-dropdown {
+  .header__dropdown {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -691,17 +675,17 @@ footer {
     min-height: 15rem;
   }
 
-  .logo-hero {
+  .hero__logo {
     width: 22em;
   }
 
-  .button-contact-us {
+  .hero__cta-button {
     width: 12rem;
     height: 2.5rem;
     font-size: 1rem;
   }
 
-  .section-content {
+  .section__container {
     flex-direction: column-reverse;
     width: 100%;
     align-items: center;
@@ -709,59 +693,59 @@ footer {
     gap: 1rem;
   }
 
-  .about-image {
+  .section__image {
     width: 50%;
     height: 17rem;
   }
 
-  .person {
-    width: 35%;
+  .lawyer-photo {
+    width: 20rem;
     height: 20rem;
   }
 
-  .highlight-text {
+  .section__highlight-text {
     text-align: center;
   }
-  .about-me-content {
+  .about-lawyer {
     flex-direction: column;
     align-items: center;
   }
 
-  .me {
+  .lawyer-info {
     align-self: center;
   }
 
-  .my-book-content {
+  .book-showcase {
     background-color: var(--black);
     width: 90%;
   }
 
-  .my-book-image {
+  .book__image {
     width: 30%;
     height: 20rem;
   }
 
-  .my-book-info {
+  .book-info {
     width: 90%;
     gap: 1rem;
   }
 
-  .buy-book {
+  .book__purchase-button {
     width: 12rem;
     height: 2.5rem;
     font-size: 1rem;
   }
 
-  .book-title {
+  .book__title {
     text-align: center;
   }
 
-  .contacts-content {
+  .contact-section {
     flex-direction: row;
     width: 80%;
   }
 
-  .contact-title > h3 {
+  .contact__title > h3 {
     font-size: 1rem;
   }
 }
@@ -771,32 +755,32 @@ footer {
     display: block;
   }
 
-  .container-header-list li {
+  .navigation__list li {
     font-size: 1.1rem;
   }
 
-  .container-header-list li:hover {
+  .navigation__list li:hover {
     border-bottom: solid 3px var(--olive-gray);
     color: var(--olive-gray);
   }
 
-  .container-header-contacts-links img:hover {
+  .header__social-links img:hover {
     border-bottom: solid 3px var(--blue);
   }
 
-  .container-header-logo {
+  .header__logo {
     width: 12rem;
     height: 3.5rem;
   }
 
-  .container-header {
+  .header__container {
     display: flex;
     align-items: center;
     width: 80%;
     margin: 0 auto;
   }
 
-  .container-header-list {
+  .navigation__list {
     text-align: center;
     margin: 0;
     display: flex;
@@ -808,22 +792,26 @@ footer {
     padding: 0;
   }
 
-  .container-header-contacts {
+  .header__contacts {
     justify-content: flex-end;
   }
 
-  .container-header-menu-button {
+  .header__menu-toggle {
     display: none;
   }
 
-  .container-header-dropdown {
+  .header__dropdown {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
 
-  .divider {
+  .navigation__divider {
     height: 1.5rem;
     border-left: 3px solid var(--blue-gray);
+  }
+
+  .lawyer-photo {
+    width: 25rem;
   }
 }

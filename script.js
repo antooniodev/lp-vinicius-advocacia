@@ -1,6 +1,6 @@
-const menuButton = document.querySelector(".container-header-menu-button")
-const arrowButton = document.querySelector(".menu-arrow")
-const dropdown = document.querySelector(".container-header-dropdown")
+const menuButton = document.querySelector(".header__menu-toggle")
+const arrowButton = document.querySelector(".header__menu-arrow")
+const dropdown = document.querySelector(".header__dropdown")
 
 menuButton.addEventListener("click", () => {
   dropdown.classList.toggle("show")

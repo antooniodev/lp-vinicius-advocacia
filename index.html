@@ -14,36 +14,38 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet" />
     <title>Vinícius Pereira</title>
+    <!-- Favicon otimizado para melhor exibição -->
+    <link rel="alternate icon" href="./assets/icon.svg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <div class="container-header">
+      <div class="header__container">
         <img
-          class="container-header-logo"
+          class="header__logo"
           src="./assets/logo-header.png"
           alt="logo Vinicius Pereira" />
 
-        <a class="container-header-menu-button">
+        <a class="header__menu-toggle">
           <img
-            class="menu-arrow"
+            class="header__menu-arrow"
             src="./assets/arrow_down.svg"
             alt="Seta para baixo" />
         </a>
-        <div class="container-header-dropdown">
-          <ol class="container-header-list">
+        <div class="header__dropdown">
+          <ol class="navigation__list">
             <li id="about-us-link">Escritório</li>
-            <span class="divider"></span>
+            <span class="navigation__divider"></span>
             <li id="about-me-link">Sócio</li>
-            <span class="divider"></span>
+            <span class="navigation__divider"></span>
             <li id="areas-link">Áreas de atuação</li>
-            <span class="divider"></span>
+            <span class="navigation__divider"></span>
             <li id="book-link">Financiamento de litígios</li>
-            <span class="divider"></span>
+            <span class="navigation__divider"></span>
             <li id="contacts-link">Contato</li>
           </ol>
-          <div class="container-header-contacts">
-            <div class="container-header-contacts-links">
+          <div class="header__contacts">
+            <div class="header__social-links">
               <a
                 href="https://www.linkedin.com/company/vps-adv/?viewAsMember=true"
                 ><img src="./assets/linkedin.svg" alt="logo linkedin"
@@ -56,20 +58,20 @@
     <main>
       <section class="hero">
         <img
-          class="logo-hero animate"
+          class="hero__logo animate"
           src="./assets/logo-hero.png"
           alt="Logo do Vinícis Pereira Advocacia" />
         <a href="https://wa.me/5511996313255">
-          <button class="button-contact-us animate">Fale Conosco</button>
+          <button class="hero__cta-button animate">Fale Conosco</button>
         </a>
       </section>
       <section id="about-us">
-        <div class="section-content">
-          <div class="about-text about-us-text animate-left">
-            <p class="highlight-text">
+        <div class="section__container">
+          <div class="section__text about-office animate-left">
+            <p class="section__highlight-text">
               Direito com propósito. Soluções com você no centro.
             </p>
-            <p class="normal-text">
+            <p class="section__description">
               O Vinicius Pereira Santos / Advocacia Estratégica tem como missão
               transformar a relação entre advogado e cliente em uma verdadeira
               parceria, em que escuta qualificada e confiança se encontram para
@@ -87,24 +89,24 @@
             </p>
           </div>
           <img
-            class="about-image animate-right"
+            class="section__image animate-right"
             src="./assets/escritorio.png"
             alt="Imagem do escritório Vinicius" />
         </div>
       </section>
       <section id="about-me">
-        <div class="section-content about-me-content">
+        <div class="section__container about-lawyer">
           <img
-            class="about-image person animate-left"
+            class="section__image lawyer-photo animate-left"
             src="./assets/person.jpg"
             alt="Foto de Vinícius Pereira" />
-          <div class="about-text me animate-right">
-            <h3 class="name-highlight">Vinícius Santos</h3>
-            <div class="contact-info">
-              <p class="normal-text">+55 (11) 99631-3255</p>
-              <p class="normal-text">vsantos@vps.adv.br</p>
+          <div class="section__text lawyer-info animate-right">
+            <h3 class="lawyer__name">Vinícius Santos</h3>
+            <div class="lawyer__contact-info">
+              <p class="section__description">+55 (11) 99631-3255</p>
+              <p class="section__description">vsantos@vps.adv.br</p>
             </div>
-            <p class="normal-text">
+            <p class="section__description">
               Mestre (2021, Universidade de Coimbra) e graduado (2017,
               Pontifícia Universidade Católica de São Paulo – PUC-SP) em
               direito. Advogado inscrito na Ordem dos Advogados do Brasil,
@@ -118,25 +120,35 @@
         </div>
       </section>
       <section id="section-areas">
-        <h2 class="areas-title animate">Áreas de atuação</h2>
-        <div class="container-areas line">
-          <div class="area left animate-left">Resolução de disputas</div>
-          <div class="area right animate-right">Contratos e societário</div>
-          <div class="area left animate-left">Imobiliário e leilões</div>
+        <h2 class="areas__title animate">Áreas de atuação</h2>
+        <div class="areas__container areas__row">
+          <div class="areas__item areas__item--left animate-left">
+            Resolução de disputas
+          </div>
+          <div class="areas__item areas__item--right animate-right">
+            Contratos e societário
+          </div>
+          <div class="areas__item areas__item--left animate-left">
+            Imobiliário e leilões
+          </div>
         </div>
-        <div class="container-areas line">
-          <div class="area right animate-right">Concursos públicos</div>
-          <div class="area left animate-left">
+        <div class="areas__container areas__row">
+          <div class="areas__item areas__item--right animate-right">
+            Concursos públicos
+          </div>
+          <div class="areas__item areas__item--left animate-left">
             Sucessões e planejamento patrimonial
           </div>
-          <div class="area right animate-right">Special situations</div>
+          <div class="areas__item areas__item--right animate-right">
+            Special situations
+          </div>
         </div>
       </section>
       <section id="book">
-        <div class="section-content my-book-content">
-          <div class="about-text my-book-info animate">
-            <h2 class="book-title">Financiamento de litígios por terceiros</h2>
-            <p class="normal-text">
+        <div class="section__container book-showcase">
+          <div class="section__text book-info animate">
+            <h2 class="book__title">Financiamento de litígios por terceiros</h2>
+            <p class="section__description">
               O third-party funding consiste em modalidade de financiamento em
               que um terceiro custeia as despesas relacionadas a um litígio
               (custas, honorários, perícias etc.) em troca de um percentual
@@ -148,35 +160,39 @@
               descorrelacionados do mercado financeiro.
             </p>
             <a
-              class="link-buy-book"
+              class="book__purchase-link"
               href="https://www.amazon.com.br/dp/652630186X?ref=cm_sw_r_ffobk_cp_ud_dp_RNMT9CQJW4P03QWFPE9W&ref_=cm_sw_r_ffobk_cp_ud_dp_RNMT9CQJW4P03QWFPE9W&social_share=cm_sw_r_ffobk_cp_ud_dp_RNMT9CQJW4P03QWFPE9W&bestFormat=true">
-              <button class="button buy-book normal-text">Compre já</button>
+              <button class="book__purchase-button section__description">
+                Compre já
+              </button>
             </a>
           </div>
           <img
-            class="my-book-image animate"
+            class="book__image animate"
             src="./assets/livro.png"
             alt="Imagem do livro third-party funding" />
         </div>
       </section>
       <section id="contacts">
-        <div class="section-content contacts-content animate">
-          <div class="contact-text">
-            <div class="contact-title">
+        <div class="section__container contact-section animate">
+          <div class="contact__content">
+            <div class="contact__title">
               <h3>Entre em contato:</h3>
             </div>
-            <div class="contact-item normal-text">
+            <div class="contact__item section__description">
               <img src="./assets/phone.svg" alt="Ícone de telefone" />
               <p>+55 (11) 99631-3255</p>
             </div>
-            <div class="contact-item normal-text">
+            <div class="contact__item section__description">
               <img src="./assets/email.svg" alt="Ícone de e-mail" />
               <p>vsantos@vps.adv.br</p>
             </div>
 
-            <div class="contact-actions">
-              <a href="https://wa.me/5511996313255" class="whatsapp-button">
-                <button class="normal-text">WhatsApp</button>
+            <div class="contact__actions">
+              <a
+                href="https://wa.me/5511996313255"
+                class="contact__whatsapp-link">
+                <button class="section__description">WhatsApp</button>
               </a>
               <!-- <div class="social-links">
                 <a
@@ -185,7 +201,7 @@
                 </a>
               </div> -->
             </div>
-            <div class="contact-item normal-text">
+            <div class="contact__item section__description">
               <p>
                 Rua Arquiteto Olavo Redig de Campos, nº 105, EZ Towers - Torre
                 B, 24º andar, Chácara Santo Antônio, 04711-905

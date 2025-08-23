@@ -286,7 +286,7 @@ h2 {
 .areas__row {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .areas__title {
@@ -301,6 +301,18 @@ h2 {
   margin: 0.5rem 0;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
+  max-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.areas__item__title {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
 }
 
 /* ANIMATIONS */
@@ -531,7 +543,7 @@ footer {
   }
 
   .lawyer-photo {
-    width: 15rem !important;
+    width: 13rem !important;
     height: 20rem !important;
   }
 
@@ -567,6 +579,8 @@ footer {
 
   .areas__row {
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   .areas__item {
@@ -699,7 +713,7 @@ footer {
   }
 
   .lawyer-photo {
-    width: 17rem;
+    width: 13rem;
     height: 20rem;
   }
 
@@ -743,6 +757,10 @@ footer {
   .contact-section {
     flex-direction: row;
     width: 80%;
+  }
+
+  .areas__row {
+    gap: 1rem;
   }
 
   .contact__title > h3 {
@@ -812,6 +830,6 @@ footer {
   }
 
   .lawyer-photo {
-    width: 20rem;
+    width: 16rem;
   }
 }
